@@ -8,18 +8,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,400&family=Poppins&display=swap" rel="stylesheet">
     <script src="js/index.js"></script>
+    <!--Smooth Scroll Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
+  <!-- NAVBAR -->
     <header>
       <img src="images/Full Logo.png">
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Work</li>
+        <a href="#home"><li>Home</li></a>
+        <a href="#skills"><li>Skills</li></a>
+        <a href="#work"><li>Work</li></a>
         <li>Contact</li>
         <li>Resume</li>
       </ul>
     </header>
+  <!-- HERO IMAGE -->
     <section class="heroImg">
       <div class="content">
         <img src="images/Danny Profile.png">
@@ -28,9 +32,9 @@
         <button>Download Resume</button>
       </div>
     </section>
-    <div class="textBox">
-      <h1 class="heading">My UX Skills</h1>
-    </div>
+  <!-- UX SKILLS -->
+    <div class="scrollPoint" id="skills"></div>
+    <h1 class="heading"><span>My UX Skills</span></h1>
     <section class="flexContainer">
       <div>
         <img src="images/User Research Icon.png">
@@ -48,17 +52,16 @@
         <p>Working knowledge of HTML5, CSS, and jQuery.</p>
       </div>
     </section>
-
+  <!-- MY TOOLS -->
     <!-- <section class="myTools">
       <div class="textBox">
         <h1 class="heading">My Tools</h1>
       </div>
     </section> -->
-
+  <!-- MY WORK -->
+  <div class="scrollPoint" id="work"></div>
+  <h1 class="heading"><span>My Work</span></h1> 
     <section class="myWork">
-      <div class="textBox">
-        <h1 class="heading">My Work</h1>
-      </div> 
       <div class="workGrid">
         <div class="img1">
           <img src="images/diverge preview.png">
@@ -86,11 +89,12 @@
         </div>
       </div>
     </section>
+  <!-- FOOTER -->
     <footer>
       <h4>Quick Links</h4>
       <ul>
         <li>Home</li>
-        <li>About</li>
+        <li>Skills</li>
         <li>Work</li>
         <li>Contact</li>
         <li>Resume</li>
