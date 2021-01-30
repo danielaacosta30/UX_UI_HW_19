@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  line-height: 1.7;
 }
 a {
   text-decoration: none;
@@ -9,7 +10,7 @@ body {
   margin: 0;
 }
 header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
   padding: 15px;
@@ -75,6 +76,14 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+.btnPrimary {
+  padding: 15px;
+  background-color: #424EDE;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
 footer {
   background-color: #BCD1FF;
   padding: 5px 5px 5px 20px;
@@ -93,8 +102,10 @@ footer ul {
   color: #424EDE;
   font-family: 'Cabin', sans-serif;
   font-size: 20px;
+  font-weight: 700;
   cursor: pointer;
   margin-top: 10px;
+  line-height: 1.2;
 }
 footer li {
   display: flex;
@@ -107,7 +118,7 @@ footer li {
   color: white;
 }
 .scrollPoint {
-  height: 30px;
+  height: 50px;
 }
 /* My UX Skills Section */
 h3 {
@@ -167,7 +178,6 @@ p {
 }
 .img1, .img2, .img3, .content1, .content2, .content3 {
   padding: 50px;
-  width: 100%;
 }
 .content1 {
   grid-area: content1;
